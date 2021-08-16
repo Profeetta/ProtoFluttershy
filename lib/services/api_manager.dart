@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 
 import 'package:http_test_run/constants/strings.dart';
 
-class API_Manager {
+class ApiManager {
   void getNews() async {
     var client = http.Client();
 
@@ -16,6 +16,6 @@ class API_Manager {
       var jsonMap = json.decode(jsonString);
 
       //var newsModel = NewsModel.fromJson(jsonMap);  >> newsmodel on jsonin class
-    }
+    } else {}
   }
 }
