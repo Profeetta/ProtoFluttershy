@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'datatable.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -8,21 +10,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  //final patientInfo = patientInfoFromJson(jsonString);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("This is the homepage"),
-      ),
       body: Container(
-        child: ListView.builder(
-          itemBuilder: (context, index) {
-            return Container(
-              height: 100,
-              color: Colors.grey,
-            );
-          },
-        ),
+        child: DataTableClass(),
       ),
     );
   }

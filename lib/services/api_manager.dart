@@ -1,4 +1,4 @@
-import 'dart:convert';
+/*import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 import 'package:http_test_run/constants/strings.dart';
@@ -16,6 +16,7 @@ class ApiManager {
       var jsonMap = json.decode(jsonString);
 
       //var newsModel = NewsModel.fromJson(jsonMap);  >> newsmodel on jsonin class
+      final patientInfo = patientInfoFromJson(jsonString)
     } else {}
   }
-}
+}*/
